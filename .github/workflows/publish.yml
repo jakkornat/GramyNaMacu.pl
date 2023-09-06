@@ -18,9 +18,10 @@ jobs:
         local-dir: ./src/
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
+        protocol: ftps
         exclude: |
           **/.git*
           **/.git*/**
           cgi-bin/**
           .htaccess
-        server-dir: /public_html/
+        server-dir: ./public_html/
